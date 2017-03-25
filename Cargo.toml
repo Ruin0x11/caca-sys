@@ -1,0 +1,23 @@
+[package]
+name = "caca-sys"
+version = "0.1.0"
+authors = ["Ian Pickering <ipickering2@gmail.com>"]
+description = "Low-level bindings to libcaca"
+
+build = "build.rs"
+
+[features]
+enable-ncurses = []
+enable-slang = []
+enable-conio = []
+enable-x11 = []
+enable-gl = []
+enable-win32 = []
+enable-network = []
+
+[lib]
+name = "caca_sys"
+path = "lib.rs"
+
+[dependencies]
+libc = "0.2.21"
