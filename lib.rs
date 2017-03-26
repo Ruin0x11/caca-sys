@@ -126,7 +126,7 @@ pub struct CacaEventRaw {
     pub type_: c_uint,
     // the largest sized event in the union is the key event.
     // for now, just manually transmute event information based on event type.
-    pub data: [u8; 2 + 2 + 4], // c_int + u32 + c_char[8]
+    pub data: [u8; 16], // c_int + u32 + c_char[8]
 }
 
 extern "C" {
@@ -224,8 +224,8 @@ extern "C" {
     // canvas frame handling
     pub fn caca_get_frame_count(cv: *const CacaCanvasRaw) -> c_int;
     pub fn caca_set_frame(cv: *mut CacaCanvasRaw, f: c_int) -> c_int;
-    pub fn caca_get_frame_name(cv: *const CacaCanvasRaw) -> *const char;
-    pub fn caca_set_frame_name(cv: *mut CacaCanvasRaw, n: *const char) -> c_int;
+    pub fn caca_get_frame_name(cv: *const CacaCanvasRaw) -> *const c_char;
+    pub fn caca_set_frame_name(cv: *mut CacaCanvasRaw, n: *const c_char) -> c_int;
     pub fn caca_create_frame(cv: *mut CacaCanvasRaw, f: c_int) -> c_int;
     pub fn caca_free_frame(cv: *mut CacaCanvasRaw, f: c_int) -> c_int;
 
