@@ -3,6 +3,13 @@ name = "caca-sys"
 version = "0.1.0"
 authors = ["Ian Pickering <ipickering2@gmail.com>"]
 description = "Low-level bindings to libcaca"
+readme = "README.md"
+homepage = "https://www.github.com/Ruin0x11/caca-sys"
+documentation = "https://www.github.com/Ruin0x11/caca-sys"
+repository = "https://www.github.com/Ruin0x11/caca-sys"
+keywords = ["ffi", "tui"]
+categories = ["external-ffi-bindings"]
+license = "WTFPL"
 
 build = "build.rs"
 
