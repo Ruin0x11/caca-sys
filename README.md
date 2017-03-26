@@ -2,7 +2,7 @@
 Low-level Rust bindings to `libcaca`.
 
 ## Usage
-Ensure that the `libcaca` features you want are enabled in the `Cargo.toml`:
+Ensure that the `libcaca` features you want are enabled in your `Cargo.toml`:
 ```
 caca-sys = { version: "0.1.0", features = ["enable-x11", "enable-ncurses"] }
 ```
