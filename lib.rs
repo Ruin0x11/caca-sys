@@ -53,68 +53,72 @@ pub const CACA_EVENT_QUIT: c_uint          = 0x0040;
 pub const CACA_EVENT_ANY: c_uint           = 0xffff;
 
 // Key values
-pub const CACA_KEY_UNKNOWN: c_uint = 0x00;
-pub const CACA_KEY_CTRL_A: c_uint =    0x01;
-pub const CACA_KEY_CTRL_B: c_uint =    0x02;
-pub const CACA_KEY_CTRL_C: c_uint =    0x03;
-pub const CACA_KEY_CTRL_D: c_uint =    0x04;
-pub const CACA_KEY_CTRL_E: c_uint =    0x05;
-pub const CACA_KEY_CTRL_F: c_uint =    0x06;
-pub const CACA_KEY_CTRL_G: c_uint =    0x07;
-pub const CACA_KEY_BACKSPACE: c_uint = 0x08;
-pub const CACA_KEY_TAB: c_uint =       0x09;
-pub const CACA_KEY_CTRL_J: c_uint =    0x0a;
-pub const CACA_KEY_CTRL_K: c_uint =    0x0b;
-pub const CACA_KEY_CTRL_L: c_uint =    0x0c;
-pub const CACA_KEY_RETURN: c_uint =    0x0d;
-pub const CACA_KEY_CTRL_N: c_uint =    0x0e;
-pub const CACA_KEY_CTRL_O: c_uint =    0x0f;
-pub const CACA_KEY_CTRL_P: c_uint =    0x10;
-pub const CACA_KEY_CTRL_Q: c_uint =    0x11;
-pub const CACA_KEY_CTRL_R: c_uint =    0x12;
-pub const CACA_KEY_PAUSE: c_uint =     0x13;
-pub const CACA_KEY_CTRL_T: c_uint =    0x14;
-pub const CACA_KEY_CTRL_U: c_uint =    0x15;
-pub const CACA_KEY_CTRL_V: c_uint =    0x16;
-pub const CACA_KEY_CTRL_W: c_uint =    0x17;
-pub const CACA_KEY_CTRL_X: c_uint =    0x18;
-pub const CACA_KEY_CTRL_Y: c_uint =    0x19;
-pub const CACA_KEY_CTRL_Z: c_uint =    0x1a;
-pub const CACA_KEY_ESCAPE: c_uint =    0x1b;
-pub const CACA_KEY_DELETE: c_uint =    0x7f;
-pub const CACA_KEY_UP: c_uint =    0x111;
-pub const CACA_KEY_DOWN: c_uint =  0x112;
-pub const CACA_KEY_LEFT: c_uint =  0x113;
-pub const CACA_KEY_RIGHT: c_uint = 0x114;
-pub const CACA_KEY_INSERT: c_uint =   0x115;
-pub const CACA_KEY_HOME: c_uint =     0x116;
-pub const CACA_KEY_END: c_uint =      0x117;
-pub const CACA_KEY_PAGEUP: c_uint =   0x118;
-pub const CACA_KEY_PAGEDOWN: c_uint = 0x119;
-pub const CACA_KEY_F1: c_uint =  0x11a;
-pub const CACA_KEY_F2: c_uint =  0x11b;
-pub const CACA_KEY_F3: c_uint =  0x11c;
-pub const CACA_KEY_F4: c_uint =  0x11d;
-pub const CACA_KEY_F5: c_uint =  0x11e;
-pub const CACA_KEY_F6: c_uint =  0x11f;
-pub const CACA_KEY_F7: c_uint =  0x120;
-pub const CACA_KEY_F8: c_uint =  0x121;
-pub const CACA_KEY_F9: c_uint =  0x122;
-pub const CACA_KEY_F10: c_uint = 0x123;
-pub const CACA_KEY_F11: c_uint = 0x124;
-pub const CACA_KEY_F12: c_uint = 0x125;
-pub const CACA_KEY_F13: c_uint = 0x126;
-pub const CACA_KEY_F14: c_uint = 0x127;
-pub const CACA_KEY_F15: c_uint = 0x128;
+pub const CACA_KEY_UNKNOWN: c_int = 0x00;
+pub const CACA_KEY_CTRL_A: c_int =    0x01;
+pub const CACA_KEY_CTRL_B: c_int =    0x02;
+pub const CACA_KEY_CTRL_C: c_int =    0x03;
+pub const CACA_KEY_CTRL_D: c_int =    0x04;
+pub const CACA_KEY_CTRL_E: c_int =    0x05;
+pub const CACA_KEY_CTRL_F: c_int =    0x06;
+pub const CACA_KEY_CTRL_G: c_int =    0x07;
+pub const CACA_KEY_BACKSPACE: c_int = 0x08;
+pub const CACA_KEY_TAB: c_int =       0x09;
+pub const CACA_KEY_CTRL_J: c_int =    0x0a;
+pub const CACA_KEY_CTRL_K: c_int =    0x0b;
+pub const CACA_KEY_CTRL_L: c_int =    0x0c;
+pub const CACA_KEY_RETURN: c_int =    0x0d;
+pub const CACA_KEY_CTRL_N: c_int =    0x0e;
+pub const CACA_KEY_CTRL_O: c_int =    0x0f;
+pub const CACA_KEY_CTRL_P: c_int =    0x10;
+pub const CACA_KEY_CTRL_Q: c_int =    0x11;
+pub const CACA_KEY_CTRL_R: c_int =    0x12;
+pub const CACA_KEY_PAUSE: c_int =     0x13;
+pub const CACA_KEY_CTRL_T: c_int =    0x14;
+pub const CACA_KEY_CTRL_U: c_int =    0x15;
+pub const CACA_KEY_CTRL_V: c_int =    0x16;
+pub const CACA_KEY_CTRL_W: c_int =    0x17;
+pub const CACA_KEY_CTRL_X: c_int =    0x18;
+pub const CACA_KEY_CTRL_Y: c_int =    0x19;
+pub const CACA_KEY_CTRL_Z: c_int =    0x1a;
+pub const CACA_KEY_ESCAPE: c_int =    0x1b;
+pub const CACA_KEY_DELETE: c_int =    0x7f;
+pub const CACA_KEY_UP: c_int =    0x111;
+pub const CACA_KEY_DOWN: c_int =  0x112;
+pub const CACA_KEY_LEFT: c_int =  0x113;
+pub const CACA_KEY_RIGHT: c_int = 0x114;
+pub const CACA_KEY_INSERT: c_int =   0x115;
+pub const CACA_KEY_HOME: c_int =     0x116;
+pub const CACA_KEY_END: c_int =      0x117;
+pub const CACA_KEY_PAGEUP: c_int =   0x118;
+pub const CACA_KEY_PAGEDOWN: c_int = 0x119;
+pub const CACA_KEY_F1: c_int =  0x11a;
+pub const CACA_KEY_F2: c_int =  0x11b;
+pub const CACA_KEY_F3: c_int =  0x11c;
+pub const CACA_KEY_F4: c_int =  0x11d;
+pub const CACA_KEY_F5: c_int =  0x11e;
+pub const CACA_KEY_F6: c_int =  0x11f;
+pub const CACA_KEY_F7: c_int =  0x120;
+pub const CACA_KEY_F8: c_int =  0x121;
+pub const CACA_KEY_F9: c_int =  0x122;
+pub const CACA_KEY_F10: c_int = 0x123;
+pub const CACA_KEY_F11: c_int = 0x124;
+pub const CACA_KEY_F12: c_int = 0x125;
+pub const CACA_KEY_F13: c_int = 0x126;
+pub const CACA_KEY_F14: c_int = 0x127;
+pub const CACA_KEY_F15: c_int = 0x128;
 
 // Since the implementation details of these structs are hidden in the C
 // interface of libcaca itself, these are just unit structs. All operations on
 // them are done by passing them to the libcaca functions.
 #[repr(C)]
 pub struct CacaCanvasRaw;
+#[repr(C)]
 pub struct CacaDitherRaw;
+#[repr(C)]
 pub struct CacaCharfontRaw;
+#[repr(C)]
 pub struct CacaFontRaw;
+#[repr(C)]
 pub struct CacaDisplayRaw;
 
 #[repr(C)]
@@ -122,7 +126,7 @@ pub struct CacaEventRaw {
     pub type_: c_uint,
     // the largest sized event in the union is the key event.
     // for now, just manually transmute event information based on event type.
-    pub data: [u8; 4 + 4 + 8], // c_int + u32 + c_char[8]
+    pub data: [u8; 2 + 2 + 4], // c_int + u32 + c_char[8]
 }
 
 extern "C" {
