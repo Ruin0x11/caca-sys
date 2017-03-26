@@ -1,6 +1,7 @@
 extern crate libc;
 
-use libc::{size_t, ssize_t, c_char, c_int, c_uint, c_float, c_void};
+use std::os::raw::c_int;
+use libc::{size_t, ssize_t, c_char, c_uint, c_float, c_void};
 
 // Colors
 pub const CACA_BLACK: c_uint =        0x00;
