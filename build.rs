@@ -75,6 +75,7 @@ fn configure() {
     cmd.arg("--disable-cxx");
     cmd.arg("--disable-python");
     cmd.arg("--disable-ruby");
+    cmd.arg("--disable-doc");
     // cmd.arg("--disable-dynamic");
     // cmd.arg("--enable-static");
 
